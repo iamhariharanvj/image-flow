@@ -1,0 +1,34 @@
+body {
+    margin: 0; /* Remove default margin */
+    overflow: hidden;
+    background-color: black;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.slide {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+img {
+    width: auto;
+    height: 100vh;
+    object-fit: cover; /* Stretch the image to cover the entire slide */
+}
